@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAIAS Standard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&family=Jost:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-view="walk" data-mode="story">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="btn" id="menu" aria-label="Open navigation" aria-expanded="false">Menu</button>
+  <a class="brand" href="#/"><svg class="logo" viewBox="0 0 40 28" width="34" height="24" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="var(--blue)"/><path d="M2 27 11 13 20 27Z" fill="var(--yellow)"/><rect x="22" y="12" width="15" height="15" fill="var(--red)"/></svg>FAIAS <small id="ver"></small></a>
+  <nav class="tabs" aria-label="Sections"><a href="#/" data-t="walk">Walk</a><a href="#/journeys" data-t="journeys">Journeys</a><a href="#/reference" data-t="reference">Reference</a></nav>
+  <span class="sp"></span>
+  <a class="btn repo" id="repo" href="#" target="_blank" rel="noopener">Repository</a>
+  <button class="btn" id="theme" type="button"></button>
+</header>
+<div class="shell">
+  <nav class="nav" id="nav" aria-label="Standard navigation"></nav>
+  <main id="main" tabindex="-1"></main>
+  <aside id="aside" aria-label="On this page"></aside>
+</div>
+
+<script src="data/index.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
