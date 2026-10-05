@@ -455,6 +455,7 @@ h1,h2,.kq,.jt,.silence,.sil p,.big{font-family:var(--display)}
 .hp .pent{width:100%;height:auto}
 .hp figcaption{font:400 12px var(--mono);color:var(--muted);text-align:center;margin-top:4px}
 .apent{margin:0 0 10px}
+.lede1{font-size:1.05rem;line-height:1.5;color:var(--text);max-width:38rem;margin:0 0 26px;padding-bottom:18px;border-bottom:1px solid var(--line)}
 .regs .chip{white-space:normal;max-width:100%}
 .lib a small{overflow-wrap:anywhere;min-width:0}
 @media (max-width:900px){

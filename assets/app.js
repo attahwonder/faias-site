@@ -219,7 +219,7 @@ function viewWalk(id){
   if(!id||!byId[id]){id=randomId();history.replaceState(null,'','#/walk/'+id)}
   if(trail.indexOf(id)<0){trail.push(id);saveTrail()}
   var q=byId[id],d=DOM[q.domain],my=++token;
-  var hero='<div class="sw hero walk"><div class="hq"><p class="eyebrow hm">'+mark(q.domain,30)+'<span>'+esc(d.name)+' / '+esc(q.subdomain)+' · '+q.id+'</span></p><h1 class="kq">'+esc(q.question)+'</h1>'
+  var hero='<div class="sw hero walk"><div class="hq">'+(F.lede?'<p class="lede1">'+esc(F.lede)+'</p>':'')+'<p class="eyebrow hm">'+mark(q.domain,30)+'<span>'+esc(d.name)+' / '+esc(q.subdomain)+' · '+q.id+'</span></p><h1 class="kq">'+esc(q.question)+'</h1>'
    +'<dl class="facts"><div><dt>Title</dt><dd>'+esc(q.title)+'</dd></div><div><dt>Testing Confidence</dt><dd>'+starChip(q.star)+'</dd></div><div><dt>Applies to</dt><dd>'+appl(q)+'</dd></div></dl>'
    +'<div class="acts"><button class="btn pri big2" type="button" data-act="random" data-cur="'+id+'">Another question</button><a class="btn big2" href="#/irq/'+id+'">Open full entry</a></div></div>'
    +'<figure class="hp">'+radar(q,{size:180,labels:true})+'<figcaption>Risk Weighting Profile (5 Axes, 1–4)</figcaption></figure></div>';
