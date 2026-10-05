@@ -180,7 +180,13 @@ function viewRefHome(){
 var trail=[],lazy={},lazyObs=null;
 try{trail=(JSON.parse(sessionStorage.getItem('faias.trail')||'[]')||[]).filter(function(i){return byId[i]})}catch(e){}
 function saveTrail(){try{sessionStorage.setItem('faias.trail',JSON.stringify(trail))}catch(e){}}
-function randomId(not){var p;do{p=F.irqs[Math.floor(Math.random()*F.irqs.length)].id}while(p===not&&F.irqs.length>1);return p}
+/* Starting questions first: the walk opens on one of F.starters, and "Another question" offers the starters not yet
+   visited before it draws from all questions. */
+function randomId(not){
+  var pool=(F.starters||[]).filter(function(i){return byId[i]&&i!==not&&trail.indexOf(i)<0});
+  if(!pool.length)pool=F.irqs.map(function(q){return q.id}).filter(function(i){return i!==not});
+  return pool[Math.floor(Math.random()*pool.length)]||F.irqs[0].id;
+}
 var famBy={};F.regFamilies.forEach(function(f){famBy[f.key]=f});
 function secOf(dt,n){var s=dt.canvas.filter(function(c){return c.n===n})[0];return s?clean(s.html):''}
 function scaleHtml(n){return '<span class="scale" role="img" aria-label="'+n+' of 4 used levels filled; level 5 unused">'+[1,2,3,4].map(function(k){return '<i class="'+(k<=n?'f':'')+'"></i>'}).join('')+'<i class="x" title="★5 is not assigned to any test"></i></span>'}
