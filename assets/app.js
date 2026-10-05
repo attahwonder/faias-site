@@ -50,8 +50,8 @@ $('#ver').textContent='v'+F.version;$('#repo').href=F.repo;
 /* ---------- script injection ---------- */
 var pend={};
 function inject(src){return pend[src]||(pend[src]=new Promise(function(res,rej){var s=document.createElement('script');s.src=src;s.onload=res;s.onerror=function(){delete pend[src];rej(new Error(src))};document.head.appendChild(s)}))}
-function getIrq(id){var w=window.FAIAS_IRQ;return w&&w[id]?Promise.resolve(w[id]):inject('data/irq/'+id+'.js').then(function(){return window.FAIAS_IRQ[id]})}
-function getDoc(s){var w=window.FAIAS_DOC;return w&&w[s]?Promise.resolve(w[s]):inject('data/doc/'+s+'.js').then(function(){return window.FAIAS_DOC[s]})}
+function getIrq(id){var w=window.FAIAS_IRQ;return w&&w[id]?Promise.resolve(w[id]):inject('data/irq/'+id+'.js?v='+F.version).then(function(){return window.FAIAS_IRQ[id]})}
+function getDoc(s){var w=window.FAIAS_DOC;return w&&w[s]?Promise.resolve(w[s]):inject('data/doc/'+s+'.js?v='+F.version).then(function(){return window.FAIAS_DOC[s]})}
 function clean(html){ /* wrap tables, neutralise links that point into the source repository */
   var d=document.createElement('div');d.innerHTML=html;
   $$('table',d).forEach(function(t){var w=document.createElement('div');w.className='tw';t.parentNode.insertBefore(w,t);w.appendChild(t)});
