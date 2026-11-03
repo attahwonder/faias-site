@@ -104,7 +104,7 @@ function radar(q,o){ /* five axes, 1-4 each, drawn as a pentagon on a 4-ring gri
 }
 function rk(q){return radar(q,{size:24})}
 function critChip(c){return '<span class="chip k-'+c+'">'+c+'</span>'}
-function foot(){return '<footer class="foot pg wide">FAIAS v'+esc(F.version)+' · © 2026 Wonder Attah · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · manifest root '+root8+' · <a href="'+esc(F.repo)+'" target="_blank" rel="noopener">Repository</a><br>A rendering of FAIAS v'+esc(F.version)+'. The signed text is in the <a href="'+esc(F.repo)+'" target="_blank" rel="noopener">repository</a>.</footer>'}
+function foot(){return '<footer class="foot pg wide">FAIAS v'+esc(F.version)+' · © 2026 Wonder Attah · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · manifest root '+root8+' · <a href="'+esc(F.repo)+'" target="_blank" rel="noopener">Repository</a> · <a href="https://github.com/attahwonder/faias-harness" target="_blank" rel="noopener">Test harness</a><br>A rendering of FAIAS v'+esc(F.version)+'. The signed text is in the <a href="'+esc(F.repo)+'" target="_blank" rel="noopener">repository</a>.</footer>'}
 function scrollToEl(el,off){if(!el)return;var y=el.getBoundingClientRect().top+window.pageYOffset-(off==null?110:off);window.scrollTo({top:Math.max(0,y),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
 function tocHtml(items,title){ /* items: [id, label, num] */
   return '<details class="toc ap1" open><summary>'+(title||'On this page')+'</summary>'+items.map(function(i){return '<a href="#" data-s="'+i[0]+'">'+(i[2]!=null?'<b>'+i[2]+'</b>':'')+'<span>'+esc(i[1])+'</span></a>'}).join('')+'</details>';
