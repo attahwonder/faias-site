@@ -1,0 +1,287 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://attahwonder.github.io/faias-site/v/1.3.6/faias.schema.json",
+ "x-schema-version": "1.0.0",
+ "title": "FAIAS export",
+ "description": "A derived copy of the signed FAIAS text: a header and one record for each Independent Review Question (IRQ). The signed text is each file at its url.",
+ "type": "object",
+ "required": [
+  "schema",
+  "schema_version",
+  "standard",
+  "version",
+  "tag",
+  "repository",
+  "manifest_root",
+  "manifest_files",
+  "signed",
+  "release_label",
+  "version_doi",
+  "concept_doi",
+  "links",
+  "derived_copy",
+  "signature_statements",
+  "summary",
+  "limits",
+  "counts",
+  "testing_confidence_totals",
+  "records"
+ ],
+ "additionalProperties": false,
+ "$defs": {
+  "sha256": {
+   "type": "string",
+   "pattern": "^[0-9a-f]{64}$"
+  },
+  "doi": {
+   "type": "string",
+   "pattern": "^10\\.\\d{4,9}/\\S+$"
+  },
+  "url": {
+   "type": "string",
+   "pattern": "^https://"
+  },
+  "quoted": {
+   "type": "object",
+   "required": [
+    "text",
+    "quoted_from"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "text": {
+     "type": "string",
+     "minLength": 1
+    },
+    "quoted_from": {
+     "type": "object",
+     "required": [
+      "path",
+      "lines"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "path": {
+       "type": "string"
+      },
+      "lines": {
+       "type": "array",
+       "items": {
+        "type": "integer",
+        "minimum": 1
+       },
+       "minItems": 2,
+       "maxItems": 2
+      }
+     }
+    }
+   }
+  },
+  "file": {
+   "type": "object",
+   "required": [
+    "path",
+    "sha256",
+    "url"
+   ],
+   "properties": {
+    "path": {
+     "type": "string"
+    },
+    "sha256": {
+     "$ref": "#/$defs/sha256"
+    },
+    "url": {
+     "$ref": "#/$defs/url"
+    }
+   }
+  }
+ },
+ "properties": {
+  "schema": {
+   "$ref": "#/$defs/url"
+  },
+  "schema_version": {
+   "type": "string",
+   "pattern": "^\\d+\\.\\d+\\.\\d+$"
+  },
+  "standard": {
+   "type": "string"
+  },
+  "version": {
+   "type": "string",
+   "pattern": "^\\d+\\.\\d+\\.\\d+$"
+  },
+  "tag": {
+   "type": "string",
+   "pattern": "^v\\d+\\.\\d+\\.\\d+$"
+  },
+  "repository": {
+   "$ref": "#/$defs/url"
+  },
+  "manifest_root": {
+   "$ref": "#/$defs/sha256"
+  },
+  "manifest_files": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "signed": {
+   "type": "string"
+  },
+  "release_label": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "version_doi": {
+   "oneOf": [
+    {
+     "$ref": "#/$defs/doi"
+    },
+    {
+     "type": "null"
+    }
+   ]
+  },
+  "concept_doi": {
+   "$ref": "#/$defs/doi"
+  },
+  "links": {
+   "type": "object",
+   "required": [
+    "manifest",
+    "manifest_signature",
+    "attestation",
+    "attestation_signature",
+    "public_key",
+    "ownership_proof",
+    "latest"
+   ],
+   "additionalProperties": {
+    "$ref": "#/$defs/url"
+   }
+  },
+  "derived_copy": {
+   "type": "string"
+  },
+  "signature_statements": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "minItems": 1
+  },
+  "summary": {
+   "$ref": "#/$defs/quoted"
+  },
+  "limits": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/quoted"
+   },
+   "minItems": 1
+  },
+  "counts": {
+   "type": "object",
+   "required": [
+    "irqs",
+    "claims",
+    "domains",
+    "subdomains"
+   ],
+   "additionalProperties": {
+    "type": "integer",
+    "minimum": 0
+   }
+  },
+  "testing_confidence_totals": {
+   "type": "object",
+   "required": [
+    "★1",
+    "★2",
+    "★3",
+    "★4",
+    "★5"
+   ],
+   "additionalProperties": false,
+   "patternProperties": {
+    "^★[1-5]$": {
+     "type": "integer",
+     "minimum": 0
+    }
+   }
+  },
+  "records": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "object",
+    "required": [
+     "irq_id",
+     "domain",
+     "domain_name",
+     "subdomain",
+     "question",
+     "testing_confidence",
+     "claims",
+     "canvas",
+     "procedure"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "irq_id": {
+      "type": "string",
+      "pattern": "^IRQ-[A-Z]{3}-\\d{3}$"
+     },
+     "domain": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+     },
+     "domain_name": {
+      "type": "string"
+     },
+     "subdomain": {
+      "type": "string"
+     },
+     "question": {
+      "type": "string",
+      "minLength": 1
+     },
+     "testing_confidence": {
+      "type": "string",
+      "pattern": "^★[1-5] Confidence — as at FAIAS v\\d+\\.\\d+\\.\\d+ \\([^)]*\\)( · P[1-3] \\(§6A\\.4\\))?$"
+     },
+     "claims": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "pattern": "^CLM-\\d+"
+      },
+      "description": "As the IRQ-claim matrix gives them; an entry can carry the matrix's own note after the identifier"
+     },
+     "canvas": {
+      "$ref": "#/$defs/file"
+     },
+     "procedure": {
+      "allOf": [
+       {
+        "$ref": "#/$defs/file"
+       }
+      ],
+      "properties": {
+       "id": {
+        "type": "string",
+        "pattern": "^TP-[A-Z]{3}-\\d{3}$"
+       }
+      },
+      "required": [
+       "id"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

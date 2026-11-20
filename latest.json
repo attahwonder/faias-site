@@ -1,0 +1,13 @@
+{
+ "standard": "FAIAS - Financial AI Independent Assurance Standard",
+ "version": "1.3.6",
+ "manifest_root": "02a6117b48752898bbe04c5e7e6d08f1c87307e725641be36462e5e03a9714d0",
+ "signed": "20 November 2026",
+ "release_label": "22 November 2026",
+ "version_doi": "10.5281/zenodo.24388389",
+ "concept_doi": "10.5281/zenodo.23127496",
+ "replaces_root": "6fcb1931d945da2dae49d068ef8f2969b536105f71386d7e9b332f78394e1362",
+ "export": "https://attahwonder.github.io/faias-site/v/1.3.6/faias.json",
+ "schema": "https://attahwonder.github.io/faias-site/v/1.3.6/faias.schema.json",
+ "llms": "https://attahwonder.github.io/faias-site/v/1.3.6/llms.txt"
+}

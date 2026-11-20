@@ -1,0 +1,42 @@
+# FAIAS - Financial AI Independent Assurance Standard
+
+> FAIAS is a baseline for reviewing generative, agentic and predictive AI systems in financial institutions.
+
+Version 1.3.6. Manifest root 02a6117b48752898bbe04c5e7e6d08f1c87307e725641be36462e5e03a9714d0. Signed 20 November 2026.
+
+This file is a derived copy made from the signed FAIAS text. The signed text is each file at its `url`, and its sha256 is in the signed manifest.
+
+A signature shows that a file has not changed since the owner signed it. It says nothing about whether the text is correct, or about a firm that uses FAIAS.
+
+A reader that did not calculate the sha256 of a file has not verified that file. It can state only which version and manifest root the file names.
+
+The public key is in the same repository as the text. So a check with that key shows only that the files agree with each other. A comparison of the key with a copy held elsewhere, for example in the Zenodo record, shows that it is the owner's key.
+
+Lines quoted from the standard:
+
+- "FAIAS is not a certification or approval scheme: no one is authorised to certify, accredit or approve anything against it." (README.md, line 113)
+- "The reviewer never tests production systems" (README.md, line 11)
+- "★1 is a statement about the field, never a reason to skip." (00_Admin/ASSURANCE_MODEL.md, line 185)
+- "The ★ rating in each canvas carries its anchor inside the rating artefact" (00_Admin/ASSURANCE_MODEL.md, line 195)
+- "integrity — the content has not changed since signing — and authorship control" (ownership/OWNERSHIP_PROOF.md, line 91)
+- "The signature binds content to a key, not to a moment in time." (ownership/OWNERSHIP_PROOF.md, line 93)
+- "No test is rated ★4 or ★5." (ownership/ATTESTATION.txt, line 6)
+- "An opinion at any tier is given at limited assurance." (ownership/ATTESTATION.txt, line 6)
+
+## Files
+
+- [latest.json](https://attahwonder.github.io/faias-site/latest.json)
+- [faias.json, v1.3.6](https://attahwonder.github.io/faias-site/v/1.3.6/faias.json)
+- [faias.schema.json, v1.3.6](https://attahwonder.github.io/faias-site/v/1.3.6/faias.schema.json)
+
+## Signed text
+
+- [Repository at tag v1.3.6](https://github.com/attahwonder/faias-standard/tree/v1.3.6)
+- [MANIFEST.sha256](https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/ownership/MANIFEST.sha256)
+- [MANIFEST.sha256.sig](https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/ownership/MANIFEST.sha256.sig)
+- [ATTESTATION.txt](https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/ownership/ATTESTATION.txt)
+- [ATTESTATION.txt.sig](https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/ownership/ATTESTATION.txt.sig)
+- [faias_public_key.pem](https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/ownership/faias_public_key.pem)
+- [OWNERSHIP_PROOF.md](https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/ownership/OWNERSHIP_PROOF.md)
+- [Version DOI 10.5281/zenodo.24388389](https://doi.org/10.5281/zenodo.24388389)
+- [Concept DOI 10.5281/zenodo.23127496](https://doi.org/10.5281/zenodo.23127496)

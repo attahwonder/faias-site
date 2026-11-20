@@ -1,0 +1,2594 @@
+{
+ "schema": "https://attahwonder.github.io/faias-site/v/1.3.6/faias.schema.json",
+ "schema_version": "1.0.0",
+ "standard": "FAIAS - Financial AI Independent Assurance Standard",
+ "version": "1.3.6",
+ "tag": "v1.3.6",
+ "repository": "https://github.com/attahwonder/faias-standard",
+ "manifest_root": "02a6117b48752898bbe04c5e7e6d08f1c87307e725641be36462e5e03a9714d0",
+ "manifest_files": 278,
+ "signed": "20 November 2026",
+ "release_label": "22 November 2026",
+ "version_doi": "10.5281/zenodo.24388389",
+ "concept_doi": "10.5281/zenodo.23127496",
+ "links": {
+  "manifest": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/ownership/MANIFEST.sha256",
+  "manifest_signature": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/ownership/MANIFEST.sha256.sig",
+  "attestation": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/ownership/ATTESTATION.txt",
+  "attestation_signature": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/ownership/ATTESTATION.txt.sig",
+  "public_key": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/ownership/faias_public_key.pem",
+  "ownership_proof": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/ownership/OWNERSHIP_PROOF.md",
+  "latest": "https://attahwonder.github.io/faias-site/latest.json"
+ },
+ "derived_copy": "This file is a derived copy made from the signed FAIAS text. The signed text is each file at its `url`, and its sha256 is in the signed manifest.",
+ "signature_statements": [
+  "A signature shows that a file has not changed since the owner signed it. It says nothing about whether the text is correct, or about a firm that uses FAIAS.",
+  "A reader that did not calculate the sha256 of a file has not verified that file. It can state only which version and manifest root the file names.",
+  "The public key is in the same repository as the text. So a check with that key shows only that the files agree with each other. A comparison of the key with a copy held elsewhere, for example in the Zenodo record, shows that it is the owner's key."
+ ],
+ "summary": {
+  "text": "FAIAS is a baseline for reviewing generative, agentic and predictive AI systems in financial institutions.",
+  "quoted_from": {
+   "path": "README.md",
+   "lines": [
+    9,
+    9
+   ]
+  }
+ },
+ "limits": [
+  {
+   "text": "FAIAS is not a certification or approval scheme: no one is authorised to certify, accredit or approve anything against it.",
+   "quoted_from": {
+    "path": "README.md",
+    "lines": [
+     113,
+     113
+    ]
+   }
+  },
+  {
+   "text": "The reviewer never tests production systems",
+   "quoted_from": {
+    "path": "README.md",
+    "lines": [
+     11,
+     11
+    ]
+   }
+  },
+  {
+   "text": "★1 is a statement about the field, never a reason to skip.",
+   "quoted_from": {
+    "path": "00_Admin/ASSURANCE_MODEL.md",
+    "lines": [
+     185,
+     185
+    ]
+   }
+  },
+  {
+   "text": "The ★ rating in each canvas carries its anchor inside the rating artefact",
+   "quoted_from": {
+    "path": "00_Admin/ASSURANCE_MODEL.md",
+    "lines": [
+     195,
+     195
+    ]
+   }
+  },
+  {
+   "text": "integrity — the content has not changed since signing — and authorship control",
+   "quoted_from": {
+    "path": "ownership/OWNERSHIP_PROOF.md",
+    "lines": [
+     91,
+     91
+    ]
+   }
+  },
+  {
+   "text": "The signature binds content to a key, not to a moment in time.",
+   "quoted_from": {
+    "path": "ownership/OWNERSHIP_PROOF.md",
+    "lines": [
+     93,
+     93
+    ]
+   }
+  },
+  {
+   "text": "No test is rated ★4 or ★5.",
+   "quoted_from": {
+    "path": "ownership/ATTESTATION.txt",
+    "lines": [
+     6,
+     6
+    ]
+   }
+  },
+  {
+   "text": "An opinion at any tier is given at limited assurance.",
+   "quoted_from": {
+    "path": "ownership/ATTESTATION.txt",
+    "lines": [
+     6,
+     6
+    ]
+   }
+  }
+ ],
+ "counts": {
+  "irqs": 109,
+  "claims": 28,
+  "domains": 9,
+  "subdomains": 44
+ },
+ "testing_confidence_totals": {
+  "★1": 5,
+  "★2": 60,
+  "★3": 44,
+  "★4": 0,
+  "★5": 0
+ },
+ "records": [
+  {
+   "irq_id": "IRQ-DAT-001",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.1 Training Data Provenance",
+   "question": "Can the firm evidence end-to-end provenance for every training, fine-tuning or grounding dataset — lawful origin, licence compatibility, copyright status, transformation history and reproducible lineage?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-02"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_001.md",
+    "sha256": "83086d36cb11f786b9c9c9d30edfa3f22bc9d7ce2aa1106db5c774cad2fdf208",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_001.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-001",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_001.md",
+    "sha256": "f5a28fee73055c386a092af55441f345e697c044ef942543b6bfc6af248dc3ba",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_001.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-DAT-002",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.1 Training Data Provenance",
+   "question": "Could personal or client-confidential data have entered training or fine-tuning corpora without a documented lawful basis and minimisation assessment?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-02",
+    "CLM-10"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_002.md",
+    "sha256": "c43c170b571e58322e41384acd4463462e167303b17c16ef095f8c7799224f62",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_002.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-002",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_002.md",
+    "sha256": "34441ae5850261fa26ec45d8f1f173b3ca0ccd18f52b2ba773f2e83d4d141018",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_002.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-DAT-003",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.1 Training Data Provenance",
+   "question": "Are ground-truth labels used for fine-tuning or validation of demonstrably sufficient quality, with inter-annotator agreement and error rates measured and bounded?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-02",
+    "CLM-08"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_003.md",
+    "sha256": "c03e851f974a2af3774467a43828e6f8becc05f3148135ad25859ac6efa99ca2",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_003.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-003",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_003.md",
+    "sha256": "0216ba94fe5594cdd38a69996e7b76d2087b366172f18e25aae502f675e53a8b",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_003.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-DAT-004",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.1 Training Data Provenance",
+   "question": "Is synthetic data identifiable as such within corpora, with generation method and proportion documented — and does validation demonstrate it preserves rare events, minority subgroups and real-world complexity rather than concealing them?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-02",
+    "CLM-08"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_004.md",
+    "sha256": "0a7c5ece92197c81761da31cb71bfc3b91d2117bd1861c8b1205cdaaa5e2d31d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_004.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-004",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_004.md",
+    "sha256": "0a47f5f4000615cf9dd2f9699e57d56e7dc8be70a53f265ca1e1755109638166",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_004.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-DAT-014",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.1 Training Data Provenance",
+   "question": "Is the quantity the model is trained or configured to predict or optimise a valid proxy for the substantive construct the decision is actually about — and has proxy validity been tested at subgroup level, including for cases where the historical label itself encodes prior unequal treatment rather than the true outcome of interest?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-23",
+    "CLM-02"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_014.md",
+    "sha256": "750ee7e73740ecfe07a9b8c303ee5081d3fdfc8cd8d5faad4a89944c592c1841",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_014.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-014",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_014.md",
+    "sha256": "ee2984b6d834804d81c8ae0d368274ee47cc2bff134ffd3f863fd004097a2fba",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_014.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-DAT-005",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.1 Training Data Provenance",
+   "question": "Does the training or reference data materially under-represent segments of the firm's current customer book, product set or market conditions?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-02",
+    "CLM-23"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_005.md",
+    "sha256": "0cce46e60a13c26bae9886b14349ff17d4470183b099fc6de94bf7b6acc2c208",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_005.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-005",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_005.md",
+    "sha256": "708a5054049509711c751ab6d6b0ae4d55e0c302617f5f1a84faeefef46c35e9",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_005.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-DAT-013",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.2 Data Poisoning",
+   "question": "Can user feedback signals or model outputs re-enter training or fine-tuning loops without vetting, allowing organic degradation or deliberate gaming of the feedback channel to steer future model behaviour?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-02",
+    "CLM-09"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_013.md",
+    "sha256": "1d8eaa4d2d1e7f4a216f36a1c32b34d3b66f4ad7c14c8a5cb55612cdfa3877a2",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_013.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-013",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_013.md",
+    "sha256": "f4242b3fe04987e78f639d4e2a9c47a7f0136625506b25b0d89d50a8c667edd8",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_013.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-DAT-006",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.2 Data Poisoning",
+   "question": "Could a poisoned or tampered record introduced through data ingestion, labelling or curation pipelines persist undetected into training data or the knowledge store?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-02",
+    "CLM-09"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_006.md",
+    "sha256": "0e6254f862190862fdd6854127d0924ff12762127a99f1d1c3d166c8d2821fbf",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_006.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-006",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_006.md",
+    "sha256": "e8a38db5ff2ca6dccf7c241ce0a3e9fbfd045131abdc4a318dc085544349e42a",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_006.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-DAT-007",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.3 Retrieval Data",
+   "question": "Can documents enter the RAG knowledge store without curation, deduplication, currency checks and an assigned content owner, such that stale content can override current policy?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-05",
+    "CLM-02"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_007.md",
+    "sha256": "379bbc9d1ee72fff493d2462c73636bb2dd97b467142b6fc483697fcbae1ef48",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_007.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-007",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_007.md",
+    "sha256": "701a70e317e3dca0ddf6c706b979bc7e16c77cd987745a40ee24f5980f519a9a",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_007.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-DAT-008",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.3 Retrieval Data",
+   "question": "Where the knowledge store contains conflicting documents (superseded policies, divergent product terms), is retrieval behaviour deterministic and precedence-controlled rather than arbitrary?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-05"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_008.md",
+    "sha256": "308f86ca7793050bd8f5bb72d2d508b1757d5ae196784e13b7375631d6516a32",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_008.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-008",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_008.md",
+    "sha256": "a04b8c3adf4e00a642b3a750bf1e425861f7c2523c9af560d6830ad0b1b7af5f",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_008.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-DAT-009",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.3 Retrieval Data",
+   "question": "Does retrieval respect the firm's entitlement model, or can the system surface documents to users or agents lacking the underlying access rights?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-01"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_009.md",
+    "sha256": "1bd6c7db475e165d0a82c9287af7f58fbd6f3799155a2f29ec4ea0809d9d217d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_009.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-009",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_009.md",
+    "sha256": "97d4a9d158184726a8f80964f24a41e832bd6247cf6a0d9930b44413dff0d105",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_009.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-DAT-010",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.4 Memory",
+   "question": "Are persisted memory and conversation stores governed as data assets — scoped per user/tenant with tested separation, retention schedules, obsolescence review and verifiable deletion (including DSAR erasure)?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-03",
+    "CLM-01"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_010.md",
+    "sha256": "a98f1761769c84e8c32f4a8d96ebb5ca5fb5dd8a0bfee368161c5c03aca270df",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_010.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-010",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_010.md",
+    "sha256": "cea0d67584050fceae87b71703ae1f1f8a95970389052004b4aeb143d4bfae5e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_010.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-DAT-011",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.5 Data Drift",
+   "question": "Are statistical, semantic and source drift in model inputs — including unannounced upstream reference-data changes — detected against defined baselines before performance degrades?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-04",
+    "CLM-19"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_011.md",
+    "sha256": "b4bbb7962d16536c223f8c5cacb25e8c2900b8871ded554f23d6a4e4a4e8d97f",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_011.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-011",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_011.md",
+    "sha256": "15b15dbc4f0702e98842a0fb904c900bd6dc2d0eea879cea8581afc7d5de6c2f",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_011.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-DAT-012",
+   "domain": "DAT",
+   "domain_name": "Data",
+   "subdomain": "A.5 Data Drift",
+   "question": "Are retrieval, embedding and document drift managed — e.g. embedding-model changes silently invalidating index geometry, or corpus composition shifting what the system retrieves?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-04",
+    "CLM-05"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_DAT_012.md",
+    "sha256": "3e182ccc23ed2b87fbbce8ba236ec85d468c2e87c51362617e88b6603a77118f",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_DAT_012.md"
+   },
+   "procedure": {
+    "id": "TP-DAT-012",
+    "path": "V3_Testing_Playbook/PLAYBOOK_DAT_012.md",
+    "sha256": "cc142577888ed8a84fbf4c36fe8c78eabafc8cc2df859e4a4080a8f650aff542",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_DAT_012.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-001",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.1 Capability Uncertainty",
+   "question": "Are the boundaries of the model's competence for this use case empirically defined and tested — including tasks adjacent to and outside the approved scope where performance degrades sharply?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-04"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_001.md",
+    "sha256": "4fcb6076e2ec916aa8221bf6f2ceb8f260e406730caca020e15b2dca9755d54a",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_001.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-001",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_001.md",
+    "sha256": "16c5d0c2e681d93727e16599084cdec32461429cf6d26d14d40ed61b1e2af8f0",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_001.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-002",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.1 Capability Uncertainty",
+   "question": "Could a model release or update introduce unexpected or expanded capabilities into production without documentation and re-approval of the enlarged capability surface?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-04",
+    "CLM-21"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_002.md",
+    "sha256": "6abaf374cdc2a21a32c5365ec39619a8ec31a85b0e44be1bd0fcad2a377e59a2",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_002.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-002",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_002.md",
+    "sha256": "a43ee58f00e969bee9426eecae0b7abb08a142a6f1eb32488f0fb63799b93bd2",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_002.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-003",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.1 Capability Uncertainty",
+   "question": "For reasoning models, does output quality degrade on long or multi-constraint tasks, and has the effective reasoning length/complexity limit been established for this use?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-04"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_003.md",
+    "sha256": "bfe103b51d771de39e2a7f31910f33b5bf8259b5d80b8124bd6699f7c6709080",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_003.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-003",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_003.md",
+    "sha256": "164cf87042989f4d45015dac206bf111aab550c76766eab7997c84bb41294318",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_003.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-004",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.2 Hallucination",
+   "question": "Has the frequency and severity of hallucinated facts, figures or citations been measured on tasks representative of the intended FS use, with documented tolerance thresholds?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-05"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_004.md",
+    "sha256": "2c2378caafecf9c48c76d524e8bd4de31080a4a388b8dee10d07f180c575450e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_004.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-004",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_004.md",
+    "sha256": "afa4ea9fdaeacd1c81f262820e9db8e4d96d09af7fb467ce76057fc2d1a990c9",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_004.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-005",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.2 Hallucination",
+   "question": "Can the system behaviourally distinguish genuine uncertainty, ambiguous questions, missing evidence, conflicting evidence and impossible requests — or does it fabricate a confident answer in each case?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-05",
+    "CLM-06"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_005.md",
+    "sha256": "d9cf08476793fe10509feb2e85313b30636e76aaa740a1e5c48dfce12d1fe5cd",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_005.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-005",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_005.md",
+    "sha256": "bfe021187506245a169bba7ac460afd86f8208d86221604d4ec32027ca1fd1d4",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_005.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-006",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.3 Calibration",
+   "question": "Has the organisation demonstrated that the model remains appropriately calibrated across the operating conditions expected in production, so expressed confidence tracks actual accuracy?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-06"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/EXEMPLAR_CANVASES.md",
+    "sha256": "15555c5098d1cd2b9effc0cb1f9f83ba06705b4f6c88e4bc2c2a350029752622",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/EXEMPLAR_CANVASES.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-006",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_006.md",
+    "sha256": "2a2e4a0dd51357d151790f43dbf96311f814b3f2d12bfbe41a0e12764750e2e2",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_006.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-007",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.4 Specification Gaming & Reasoning Integrity",
+   "question": "Can the system satisfy its optimisation metric while violating business intent — e.g. claims handled faster but outcomes worse — and is metric-versus-intent divergence explicitly tested?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-07"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_007.md",
+    "sha256": "98ccb886a91d9bf4568a72b506616a4def40b57c7d3189f3713a33f27edac98f",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_007.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-007",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_007.md",
+    "sha256": "aaf19c7d4641bc548da059c8c4ecfd7fe5c1f8aed890a061476e02a627baa66e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_007.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-008",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.4 Specification Gaming & Reasoning Integrity",
+   "question": "Could fine-tuning or preference optimisation have induced reward hacking (sycophancy, refusal gaming, evaluator exploitation) that survives into deployment?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-07"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_008.md",
+    "sha256": "bb70d1dce088cb26f8bce2315f18046a435fc38cfb096db0bae902527561b1e0",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_008.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-008",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_008.md",
+    "sha256": "ff9670e45f3590df3153431b99b972cc424dc1556d379b94f4da9af37240070f",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_008.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-009",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.4 Specification Gaming & Reasoning Integrity",
+   "question": "Can the model's stated reasoning or chain-of-thought misrepresent the factors actually driving its output, and is any control or disclosure relying on that reasoning aware of this?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-07",
+    "CLM-25"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_009.md",
+    "sha256": "5ba31bfc6e2e0121868cf93b1d13bc8d132834dadb8732340e7c8d4f32c320f0",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_009.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-009",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_009.md",
+    "sha256": "60cbfcacd7c4ce0ad2ee7a8c096ae864d57e6500bd870c5b0c4e723def2a9e18",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_009.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-010",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.5 Distribution Shift & Evaluation Integrity",
+   "question": "Has robustness been assessed against each relevant shift type — population, covariate, concept, label, temporal and policy shift — with revalidation triggers defined per type?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-04"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_010.md",
+    "sha256": "4b07e9dc677dbfbbd65925719364395ec1b380d5d75818358c32df0788f66d1f",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_010.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-010",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_010.md",
+    "sha256": "adae7a645cea48ae01cfb15f4becbbffe7589d52a335a1bd14a053bf8d871e96",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_010.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-011",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.5 Distribution Shift & Evaluation Integrity",
+   "question": "Could the evaluation evidence supporting approval be contaminated — benchmark items present in training data, or vendor-reported scores on leaked public benchmarks?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-08"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_011.md",
+    "sha256": "59b1f871a27d1c4c5538eafdac1a2c58daa669c0167d3da5bfca3e7c71257e72",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_011.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-011",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_011.md",
+    "sha256": "22efd215d7f91b177ec9748352bffbd3835a6a9fb1b13f9f6e35563deb840c3e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_011.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-012",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.5 Distribution Shift & Evaluation Integrity",
+   "question": "If model outputs re-enter future training or fine-tuning data, are controls in place to prevent quality collapse from recursive synthetic content?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-08",
+    "CLM-02"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_012.md",
+    "sha256": "1951823d654489bf69221a6aa2d70725e93aa90ba96794ec80ea4df0c73fae10",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_012.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-012",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_012.md",
+    "sha256": "95528cb6ff5a3ee54f02f0f60f372d1c24b384449bf75b071016a5606089de8d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_012.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-015",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.5 Distribution Shift & Evaluation Integrity",
+   "question": "Where a language model is used as a judge or evaluator to generate the institution's own evaluation evidence, has the judge itself been validated — known bias classes (position, verbosity, self-enhancement) tested; agreement with human judgement measured; judge version pinned so evaluation evidence stays comparable; and correlated error assessed where judge and assessed system share a model family?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-08"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_015.md",
+    "sha256": "aea096de4a1dc297c2288bb45dcb448884ff5f401be9ebabe5e6f86503301d42",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_015.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-015",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_015.md",
+    "sha256": "eefc5ba36c8ad0c9269feb6dc2c5b24130d3566434dde9d4f3eaa7eed192be68",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_015.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-016",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.5 Distribution Shift & Evaluation Integrity",
+   "question": "Where the institution relies on its own pre-deployment testing, UAT, pilot or vendor evaluation results to support an authorisation decision, has it established that those results are a valid proxy for behaviour under deployment conditions — documenting the respects in which the evaluation environment diverges from the production context, reporting the rate at which the system's own traces indicate it is reasoning about being tested, graded or monitored, reporting the consequential results split by that indication, and stating in the authorisation record what the pre-deployment evidence can and cannot carry?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.2.0 (12 September 2026)",
+   "claims": [
+    "CLM-08",
+    "CLM-04"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_016.md",
+    "sha256": "60f074cb1f282ed06086733c90767b6e366ed47fea9aa03f70983b52db447b84",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_016.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-016",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_016.md",
+    "sha256": "5a9638020a498aff4dc6f0560baa0a87c7077af3b8f14b9406e14d6e2bebae69",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_016.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-013",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.6 Model Updates & Configuration",
+   "question": "Are prompt templates, system prompts and decoding parameters version-controlled and regression-tested, given that small changes materially alter behaviour without any code change?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-27"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_013.md",
+    "sha256": "eae866f35820a14ece04615947962fe894f184b32834b7ca06866c133a704583",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_013.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-013",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_013.md",
+    "sha256": "b60ada33778b09cb0d766e88607ee970dbe2015b0e39fc6d16df4b17e16ea1b6",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_013.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-MOD-014",
+   "domain": "MOD",
+   "domain_name": "Model",
+   "subdomain": "B.7 Output Stability & Determinism",
+   "question": "At a pinned model version, prompt/system configuration and decoding parameters, do materially identical inputs — exact repeat runs, and inputs subject only to immaterial perturbation — produce different consequential decisions or outputs; is the resulting decision-flip rate measured and held within a defined bound; and is the decision-extraction logic that turns model output into a decision tested separately from the underlying generation?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-04"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_MOD_014.md",
+    "sha256": "12abdc0bb0292a1b983aebc23aa4e82078672ecfeaf31b208cb2521231601f99",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_MOD_014.md"
+   },
+   "procedure": {
+    "id": "TP-MOD-014",
+    "path": "V3_Testing_Playbook/PLAYBOOK_MOD_014.md",
+    "sha256": "3166cb2d406b4ef91f5bea14b42462d5747a2051a3721de3bdc6ca392c35a473",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_MOD_014.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-001",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.1 Planning & Goal Drift",
+   "question": "Can the agent's multi-step plans diverge from the intended goal over long horizons, and has end-to-end goal fidelity been tested on realistic workflows rather than per-step model quality?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-12"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_001.md",
+    "sha256": "c8c0645502d057556974bfc4d49f6bc3a7894d936e816b36d69dd75b1a902fd6",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_001.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-001",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_001.md",
+    "sha256": "f20310fef6bfdb965742a346ac90cb5b49852e6a58fe9aeb138a51ec6e50db30",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_001.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-002",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.1 Planning & Goal Drift",
+   "question": "Can the agent's operative objective evolve during execution — intermediate goals replacing the original, or optimisation continuing after the user's intent has changed or been withdrawn?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-12"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_002.md",
+    "sha256": "6309f3ea3729b54461d3c89fb40eed7942c39c5ce6eaac6d1d82376e8daeefd9",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_002.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-002",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_002.md",
+    "sha256": "9528dfd55a84db443b0d9fe761ef828b77dbc45a8f942766f9ec5af2a5d1198b",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_002.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-003",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.2 Tool Use",
+   "question": "Does each tool exposed to the agent carry an explicit business justification, or does the agent hold capabilities beyond what its approved tasks require?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.2.0 (12 September 2026)",
+   "claims": [
+    "CLM-12"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_003.md",
+    "sha256": "090287ef3dd7094561c1ece8b7bd27918f255cf8cc5009c6d5920f02605df66e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_003.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-003",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_003.md",
+    "sha256": "2769ece9570f9ed963e52dd4a7996ddcca5b67b0caeabd946f4dd5d62e9f7cb3",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_003.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-004",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.2 Tool Use",
+   "question": "Could the agent chain individually-permitted tools or API calls to achieve an outcome (e.g. data aggregation, fund movement) that no single permission would allow?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.2.0 (12 September 2026)",
+   "claims": [
+    "CLM-12",
+    "CLM-01"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_004.md",
+    "sha256": "0a4e3661e84d175471c5749a02d8cd6e4bf3b99cb1f39f5a9c6ff47900fd5e65",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_004.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-004",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_004.md",
+    "sha256": "f6a1dc8328163c6c1fde287cb0377b25b1f879ce6fc6717225184218c0605756",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_004.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-005",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.2 Tool Use",
+   "question": "Can tool invocations proceed with hallucinated tools, manipulated parameters, or unvalidated outputs — including external API responses influencing agent behaviour without integrity checks?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.2.0 (12 September 2026)",
+   "claims": [
+    "CLM-12",
+    "CLM-11"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_005.md",
+    "sha256": "c70745779091aa2bb7f10e270e93e9bf82bdade1f73d0d5f8d2ce845e6db4b69",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_005.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-005",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_005.md",
+    "sha256": "2855a3ea4e069adef0c50ba620b1718e639d192222bca5cf7f7a8d3b3ac33754",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_005.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-006",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.3 Recursive Agents",
+   "question": "Where the agent delegates to sub-agents or can spawn further agents, are recursion depth, aggregate permissions and total cost/resource consumption hard-limited?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.2.0 (12 September 2026)",
+   "claims": [
+    "CLM-14"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_006.md",
+    "sha256": "8254e18a7193394c0f82e8bbb3145eb78fa0aa667c5e491cb1f2779c373a0d45",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_006.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-006",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_006.md",
+    "sha256": "ff69271f49ac09275f9d98b795cdacf82e65fcee8bf1347f34bcfaf647a82895",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_006.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-007",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.4 Multi-Agent Systems",
+   "question": "In multi-agent orchestrations, can agents reinforce each other's errors, produce consensus that hides wrong reasoning, or leave responsibility for an outcome ambiguous?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-14"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_007.md",
+    "sha256": "a71d21f489ef4d08aff981a14b68c26a94622bc35ab68d8c4ee60dee4bb507ad",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_007.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-007",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_007.md",
+    "sha256": "36eecd6121faec73856965651bf8979de6c4d43f426dcbc2fce41d7a73f979bb",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_007.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-008",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.5 Operational Memory",
+   "question": "Could poisoned or erroneous context inherited from earlier sessions — including the agent's own past failures written to memory — steer future decisions, and is operational memory validated before reuse?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-03"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_008.md",
+    "sha256": "abaa80ecabd6fec8df3bfbff93b49285513b86253ee5b6d725664e2b2c998cc8",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_008.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-008",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_008.md",
+    "sha256": "a77f38077af6ef9c90dffa8c3eeddf084b5f316baf0a5251ec86412e41edf953",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_008.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-009",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.6 Hidden Reasoning Dependencies",
+   "question": "Does agent behaviour depend on undocumented intermediate reasoning artefacts or prompt content, such that a prompt change alters behaviour without any code change — and is prompt text managed as controlled configuration?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-27"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_009.md",
+    "sha256": "410b18c6b8eb61a6c69fd1e4a2b93a3a5ad94e0df8f847a393100c14f52a9984",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_009.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-009",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_009.md",
+    "sha256": "08aba8848f2eba836ea19f710162d9d628b60afefb11878e4dd274f00c0c4eb7",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_009.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-010",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.7 Workflow & Action Safety",
+   "question": "Can the executed workflow diverge from the documented business process (steps skipped, reordered or invented) without detection or reconciliation?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-14",
+    "CLM-13"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_010.md",
+    "sha256": "dcc4e7c11d1a41592b27073481c88d965bd7fa7e0f5ad5e9916ea9d42eaf884a",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_010.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-010",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_010.md",
+    "sha256": "1174831dc67a33b9ac8c496184e16a2cb588d0b8ff96ef71c69b487e8b037c48",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_010.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-011",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.7 Workflow & Action Safety",
+   "question": "Are all agent actions — including intermediate tool calls and abandoned branches — captured in reviewable traces, or can consequential actions occur in hidden chains?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-13",
+    "CLM-25"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_011.md",
+    "sha256": "0179fe477f30adb9a28a359cd5b0c509be98133865d19bb45ea2eb90ff02a7f2",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_011.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-011",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_011.md",
+    "sha256": "4e88fc4753b25c62ef0d5523984e9bbd19635807f0168e669c88b719bb60f521",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_011.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-012",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.7 Workflow & Action Safety",
+   "question": "Are irreversible or high-materiality actions (payments, trades, record deletion, external communications) structurally gated behind checkpoints the agent cannot bypass?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.2.0 (12 September 2026)",
+   "claims": [
+    "CLM-12",
+    "CLM-18"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_012.md",
+    "sha256": "1301e462ddbbe233223025b72226e9218c3b78a8581ffd2a9b0184eebe139f5d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_012.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-012",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_012.md",
+    "sha256": "ebb59f9b50cdbd0e3fae78d015feb644eacdbc007b81cf63a6d471ed4900dadc",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_012.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-013",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.7 Workflow & Action Safety",
+   "question": "For computer-use agents operating GUIs, can the agent act on unintended UI elements or continue acting after the screen state diverges from its expectation?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-12",
+    "CLM-18"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_013.md",
+    "sha256": "dee0443f8a41174e817a1020960c8611f5623781be4a6315dfeaaa896ae77389",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_013.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-013",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_013.md",
+    "sha256": "d29e2981928895e85bb815cb9fcd064c1db592a8dbd82eac7d345c883fff0e43",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_013.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-AGT-014",
+   "domain": "AGT",
+   "domain_name": "Agentic",
+   "subdomain": "C.7 Workflow & Action Safety",
+   "question": "Where the firm or its providers run capability evaluations, red-teaming or benchmarking of agentic AI systems, is the evaluation environment structurally contained against both network egress and artefact publication (e.g. a malicious package published to a public registry), such that the system under test cannot cause real-world harm outside its intended scope, with internet/tool access justified rather than default and real-time monitoring able to halt a run before harm occurs?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-12",
+    "CLM-13"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_AGT_014.md",
+    "sha256": "adf081ed9eb02a80fcd03aeec7d41e2d5caf718e231949e0301ea87313b5d045",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_AGT_014.md"
+   },
+   "procedure": {
+    "id": "TP-AGT-014",
+    "path": "V3_Testing_Playbook/PLAYBOOK_AGT_014.md",
+    "sha256": "b6db35b6e963650249223da259a690cbd604504ef894059471f5d9c93ddc0adc",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_AGT_014.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-HUM-001",
+   "domain": "HUM",
+   "domain_name": "Human Oversight",
+   "subdomain": "D.1 Automation Bias",
+   "question": "Do human reviewers detectably discriminate between correct and incorrect AI outputs, or does acceptance without challenge indicate automation bias — and are disagreement rates monitored?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-15"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_HUM_001.md",
+    "sha256": "2fbcb5c030ffc13ddf9d1aed9cae0b2a742b664ee62587c96cc06c931aecff8e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_HUM_001.md"
+   },
+   "procedure": {
+    "id": "TP-HUM-001",
+    "path": "V3_Testing_Playbook/PLAYBOOK_HUM_001.md",
+    "sha256": "63910e6c243e2d5768b3cf7ec17a449bf139b8784e8d5d41b61d7bac02485fff",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_HUM_001.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-HUM-002",
+   "domain": "HUM",
+   "domain_name": "Human Oversight",
+   "subdomain": "D.1 Automation Bias",
+   "question": "Do approval throughput, dwell time and rejection-rate data indicate genuine review, or does the human checkpoint function as approval theatre — and are overriders trained and safe to override?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-15"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_HUM_002.md",
+    "sha256": "1157f8e89a6beb79126d067365278000aa2230fcb561c66075663233deeafddb",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_HUM_002.md"
+   },
+   "procedure": {
+    "id": "TP-HUM-002",
+    "path": "V3_Testing_Playbook/PLAYBOOK_HUM_002.md",
+    "sha256": "0de55500808f6b04599c255d4f1bb638854c1f67f14500fb8d2ed2bdd2e3a1a5",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_HUM_002.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-HUM-003",
+   "domain": "HUM",
+   "domain_name": "Human Oversight",
+   "subdomain": "D.2 Skill Atrophy",
+   "question": "Can staff still perform the critical task to standard without the AI, and is AI-free competency periodically assessed rather than assumed?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-16"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_HUM_003.md",
+    "sha256": "f2b7ff0b0aa52b7acfe57d0da11e933292894cbb0c7fdf21a36185dba49372e6",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_HUM_003.md"
+   },
+   "procedure": {
+    "id": "TP-HUM-003",
+    "path": "V3_Testing_Playbook/PLAYBOOK_HUM_003.md",
+    "sha256": "4f8dc65c68ef4f5aa0310108cf512a016ca80a63ba9302572e9fd829bed07a62",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_HUM_003.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-HUM-004",
+   "domain": "HUM",
+   "domain_name": "Human Oversight",
+   "subdomain": "D.3 Escalation & Override Design",
+   "question": "Is the human intervention point positioned where intervention is still effective — before irreversible agent actions — with oversight capacity dimensioned against AI throughput and reconstructable behaviour?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-15",
+    "CLM-13"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_HUM_004.md",
+    "sha256": "4a557e20acc0a44410057d1cf031b2921656b67eb03eb773b0d1cca2b8a10e56",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_HUM_004.md"
+   },
+   "procedure": {
+    "id": "TP-HUM-004",
+    "path": "V3_Testing_Playbook/PLAYBOOK_HUM_004.md",
+    "sha256": "8ff1e7d5a7a80e1025b04d74093f0de4ae2972f271929b26b03ce9a7ea2c27c5",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_HUM_004.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-HUM-005",
+   "domain": "HUM",
+   "domain_name": "Human Oversight",
+   "subdomain": "D.3 Escalation & Override Design",
+   "question": "Is authority to suspend or constrain the system assigned to named individuals with rehearsed criteria, and is there evidence they would exercise it against commercial pressure?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-15",
+    "CLM-19"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_HUM_005.md",
+    "sha256": "f8685b5f5227bc042c511bb5d9d1707edf90ca6f2ed39556c9ebb7094c738b8c",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_HUM_005.md"
+   },
+   "procedure": {
+    "id": "TP-HUM-005",
+    "path": "V3_Testing_Playbook/PLAYBOOK_HUM_005.md",
+    "sha256": "6abe76480256ccac2207f6ab4e5fa7a33f16616a52ce4ecdd003fe1e32de4af9",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_HUM_005.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-HUM-006",
+   "domain": "HUM",
+   "domain_name": "Human Oversight",
+   "subdomain": "D.4 Accountability & Contestability",
+   "question": "Is there a named accountable owner for each AI-influenced decision, with accountability traceable through delegated and multi-agent workflows to attributable approval records?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-25",
+    "CLM-15"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_HUM_006.md",
+    "sha256": "c935d2c9a7448b08bc94ea6388ec12bd98bab96e34d260fa35e5ec4fad7900e7",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_HUM_006.md"
+   },
+   "procedure": {
+    "id": "TP-HUM-006",
+    "path": "V3_Testing_Playbook/PLAYBOOK_HUM_006.md",
+    "sha256": "3bcd9b22176ac3526dbb6824fd0e697524d17321b728047401a4e1ee8d6f1b61",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_HUM_006.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-HUM-007",
+   "domain": "HUM",
+   "domain_name": "Human Oversight",
+   "subdomain": "D.4 Accountability & Contestability",
+   "question": "Do decision-makers relying on AI outputs receive explanations sufficient in content and timeliness to exercise independent judgement, tested with the actual user population?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-15",
+    "CLM-17"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_HUM_007.md",
+    "sha256": "1b2c58f99e75c5ebabfacdc838baa3f4013e1e904d587825b783a8120e1171cd",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_HUM_007.md"
+   },
+   "procedure": {
+    "id": "TP-HUM-007",
+    "path": "V3_Testing_Playbook/PLAYBOOK_HUM_007.md",
+    "sha256": "853762217c92edcc649aef989db7e4d3d9d8e3a7ac242bf15cd516a86fe359b9",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_HUM_007.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-HUM-008",
+   "domain": "HUM",
+   "domain_name": "Human Oversight",
+   "subdomain": "D.4 Accountability & Contestability",
+   "question": "Can an affected customer or colleague obtain a genuine human re-decision — not a re-run of the same model — through a defined contest route with tracked outcomes?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-17"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_HUM_008.md",
+    "sha256": "714682b28297720b02731c19b3869aa1214eda423bf00040fe2b6fbfe75b2eb4",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_HUM_008.md"
+   },
+   "procedure": {
+    "id": "TP-HUM-008",
+    "path": "V3_Testing_Playbook/PLAYBOOK_HUM_008.md",
+    "sha256": "692bc24dfa93bf202809b8288081e88529c25a87e30b49b04020c7f084b2f817",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_HUM_008.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-HUM-009",
+   "domain": "HUM",
+   "domain_name": "Human Oversight",
+   "subdomain": "D.4 Accountability & Contestability",
+   "question": "Where AI output initiates, or materially contributes to, an adverse allegation, decision or sanction against a customer or colleague, is the evidential standard applied to that output defined and proportionate to the consequence — is the underlying evidence and reasoning disclosed to the subject, and is the subject relieved of any burden to disprove the system before the adverse action takes effect?",
+   "testing_confidence": "★1 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-17",
+    "CLM-25"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_HUM_009.md",
+    "sha256": "bef582dbe4b2395035823da9d3ceeab079fe25c5214b01e1938b2cdf655a2f69",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_HUM_009.md"
+   },
+   "procedure": {
+    "id": "TP-HUM-009",
+    "path": "V3_Testing_Playbook/PLAYBOOK_HUM_009.md",
+    "sha256": "c07b99b617b84c716a15b68caca5dd3304b8252d551fa9c802ade5f4cc655b90",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_HUM_009.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-001",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.1 Prompt Injection & Jailbreak",
+   "question": "Can a user's direct prompt override system instructions or policy constraints, and has resistance been tested with current jailbreak techniques for the deployed model version?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-09"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_SEC_001.md",
+    "sha256": "4211c2b6475f413b6d1e4b1511ec49d4a4042e620ec2cc28d74267128b131e7d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_SEC_001.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-001",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_001.md",
+    "sha256": "b5facdb27a08b8d9b5f65317639a49027674ca672249502cca5d0d6988359e3a",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_001.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-002",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.1 Prompt Injection & Jailbreak",
+   "question": "Can multi-turn, encoded, cross-lingual or persona-based jailbreaks elicit prohibited behaviours that single-turn guardrail testing would not surface?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-09"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_SEC_002.md",
+    "sha256": "c0a0bd92d15bc3af304236abe8987fb14d22ab414be4dd8e31f1b8c2f50bcb03",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_SEC_002.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-002",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_002.md",
+    "sha256": "91c56dae2f86b0a6680f11cc8e5ac746441731cdb692ff2c5e62dbc9e6625b22",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_002.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-003",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.1 Prompt Injection & Jailbreak",
+   "question": "Can indirect prompt injection originating from retrieved documents influence downstream model behaviour despite application guardrails?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-09"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/EXEMPLAR_CANVASES.md",
+    "sha256": "15555c5098d1cd2b9effc0cb1f9f83ba06705b4f6c88e4bc2c2a350029752622",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/EXEMPLAR_CANVASES.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-003",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_003.md",
+    "sha256": "5fc3246cc2ecb67353054c5c30787e788683880374b7b63653741bee818112df",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_003.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-004",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.1 Prompt Injection & Jailbreak",
+   "question": "Can instructions embedded in emails, web pages, files or tool outputs processed by an agent cause unauthorised actions (data exfiltration, unintended transactions)?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-09",
+    "CLM-12"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_SEC_004.md",
+    "sha256": "df630531a5297933ea8ed0c75a2c8f3a4ee1d94af8231c3ad53e559f802c037a",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_SEC_004.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-004",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_004.md",
+    "sha256": "beb3d233ab11a9f4ac7e4c79f7549b6b18f257b3720aa0c0c94301955cc7a5f7",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_004.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-005",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.1 Prompt Injection & Jailbreak",
+   "question": "Can an adversary with write access to any retrievable source plant content specifically crafted for the system to retrieve and act upon (inference-time RAG poisoning)?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-09",
+    "CLM-02"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_SEC_005.md",
+    "sha256": "67fedb2e5acaecf3099db08a42edd431dbe60087c0c33c1c65fd0fe017f19459",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_SEC_005.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-005",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_005.md",
+    "sha256": "058431132d640d6e118a8caca7c37ec138414899054cbd29e8143f14cb394476",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_005.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-006",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.2 Extraction & Leakage",
+   "question": "Can adversarial prompting extract the system prompt, embedded credentials, or configuration details that materially aid subsequent attacks?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-10"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_SEC_006.md",
+    "sha256": "92be1a911dc4bde0643303635333c78a63368f5b543687d583332393c4c7010b",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_SEC_006.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-006",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_006.md",
+    "sha256": "7a897720e77cb95e8616596da0dfe815d6bf9b9a5811abc58e8966959d191643",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_006.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-007",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.2 Extraction & Leakage",
+   "question": "Can training-data extraction, membership inference or model inversion recover personal or proprietary information from the model or embeddings?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-10"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_SEC_007.md",
+    "sha256": "0f6365540f09f8913c1e3dbcbcbfe2170d8003de3d6e2e65ecb6e903c2a50d75",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_SEC_007.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-007",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_007.md",
+    "sha256": "f34a34fe85c1f272234b88f46ad947e30936675041d85e91a346e3f42ec185c0",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_007.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-008",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.2 Extraction & Leakage",
+   "question": "Can confidential firm or client data leak through prompts, context windows, telemetry or logs into environments outside the firm's control?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-10",
+    "CLM-01"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_SEC_008.md",
+    "sha256": "9d2b0ec1d54153793788a828cb24cf330279e2f535ebba3b434f9b9393c5dbdd",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_SEC_008.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-008",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_008.md",
+    "sha256": "7906cdb7bd2f74d1ca2b21d3fa0bf803d9c359b5208b1e2da7fb78a9022b00c4",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_008.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-009",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.3 Supply Chain & Tool Security",
+   "question": "Is the model artefact supply chain — weights, checkpoints, serialisation formats, dependencies — protected against tampering and known deserialisation exploits?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-11"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_SEC_009.md",
+    "sha256": "1804ba7a25e9abfedd884a095a161405fed470eae9184c35c7e06661b9c0430f",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_SEC_009.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-009",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_009.md",
+    "sha256": "f8cf30c59070995893ed114e8c779a5ba74ac45c5f1f4325dc2f4c439199b814",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_009.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-010",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.3 Supply Chain & Tool Security",
+   "question": "Could a compromised or malicious MCP/tool server, plugin, or poisoned tool description redirect agent behaviour or exfiltrate data (including rug-pull updates and confused-deputy patterns)?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-11",
+    "CLM-12"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_SEC_010.md",
+    "sha256": "d89af021bf739d925b778cb687ad5af7835998f2fb9844b3353e7e471574a5b1",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_SEC_010.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-010",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_010.md",
+    "sha256": "d4f679570168b5e2a8224ac6d6be8c2094bdbd0d3682b3ea2856adc81fd48da9",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_010.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-011",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.4 Identity & Credentials",
+   "question": "Are the agent's credentials and identity distinct from human identities, least-privileged, short-lived, and revocable — or would credential theft grant broad standing access?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-01",
+    "CLM-12"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_SEC_011.md",
+    "sha256": "42dc3e50c0b2e84c8d3ddaf969659206a584cad97ad79b3193d063d9f8ecc1e9",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_SEC_011.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-011",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_011.md",
+    "sha256": "13509ef2853e4db77ec2ef8156446c1cc9d65ea93291acb272aeb9c28657b71a",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_011.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-012",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.5 Misuse & Dual-Use",
+   "question": "[Applicability condition: customer-facing deployments whose outputs are plausibly repurposable by the user as an instrument against a third party — not relevant to all deployments. The assessor confirms applicability at scoping, guided by a non-exhaustive trigger list: free-text generative output to customers; drafting or document-production capability; guidance responsive to user-described scenarios; output that carries the institution's brand or authority outside the session.] For such deployments, has the institution assessed and bounded the risk of its own AI being used by a customer as an instrument against third parties (drafting fraudulent communications, evasion or concealment guidance, social-engineering material) — with misuse cases identified and registered, and refusal and rate controls tested against them?",
+   "testing_confidence": "★1 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-09",
+    "CLM-24"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_SEC_012.md",
+    "sha256": "60e53775cab1800ed335d4ac6e1d76da078765bda3ddf434440a46f995a67d52",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_SEC_012.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-012",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_012.md",
+    "sha256": "48f096a585717bb3ae775c5786d0b6ba47231240219ebcb727e7634285389ec4",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_012.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-013",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.6 Control Efficacy Under Adversarial Evolution",
+   "question": "Where an AI system functions as a control — fraud detection, AML/transaction monitoring, surveillance, screening or promotion approval — has its detection rate and residual miss rate been measured against adversarially evolved inputs, mapped to a recognised adversarial-ML taxonomy, rather than only against historical or static case libraries; and is control efficacy re-tested on a defined cadence as adversary technique evolves?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-09",
+    "CLM-19"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_SEC_013.md",
+    "sha256": "c71f9f5aefc2641f2368f1a363df9bffea174a6990ebef4d0757fb4d9363e1a8",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_SEC_013.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-013",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_013.md",
+    "sha256": "9cb01f54c21cd7ed4ef3b6982d704ab7b8087d30d40f86e60efa014071784122",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_013.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-SEC-014",
+   "domain": "SEC",
+   "domain_name": "Security",
+   "subdomain": "E.7 Improper Output Handling",
+   "question": "Is model-generated output validated, sanitised or encoded appropriately before being passed to a downstream interpreter, renderer, query engine, shell or other execution context — such that unvalidated output cannot itself become an attack vector (injection, cross-site scripting, server-side request forgery, remote code execution) against the systems consuming it?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-09",
+    "CLM-11"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_SEC_014.md",
+    "sha256": "8bff88060bb6f7fa2545b6b085f238b3b26d03eaaf4814c7b278f04f8c2571d1",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_SEC_014.md"
+   },
+   "procedure": {
+    "id": "TP-SEC-014",
+    "path": "V3_Testing_Playbook/PLAYBOOK_SEC_014.md",
+    "sha256": "d092495bc9cb8e798d0329e1cbcc364724d51ea064c99291dd721bf05297d66a",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_SEC_014.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-TPR-001",
+   "domain": "TPR",
+   "domain_name": "Third Party",
+   "subdomain": "F.1 Due Diligence, Contracts & Licensing",
+   "question": "Was due diligence on the foundation model or API provider proportionate to materiality, covering safety evaluations, security posture, and known model weaknesses?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-22"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_TPR_001.md",
+    "sha256": "d2ffa48620eea8bc3e1b684d40bd2adbdcb04630bd88fdcd95968b2c373987fb",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_TPR_001.md"
+   },
+   "procedure": {
+    "id": "TP-TPR-001",
+    "path": "V3_Testing_Playbook/PLAYBOOK_TPR_001.md",
+    "sha256": "e46ae094c77b2cb688c27e4eb9dc0b33f502d53bd5a0b7c0168a033d4d18204a",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_TPR_001.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-TPR-002",
+   "domain": "TPR",
+   "domain_name": "Third Party",
+   "subdomain": "F.1 Due Diligence, Contracts & Licensing",
+   "question": "Do contracts secure the transparency, notification, audit, licensing and exit rights the firm needs — including advance notice of model changes, deprecations, and output usage rights?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-22",
+    "CLM-21"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_TPR_002.md",
+    "sha256": "e8ec9812a275f1663ce2b37e26a7d503a1c36f2fca9fe17071e5388c1d1f5efe",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_TPR_002.md"
+   },
+   "procedure": {
+    "id": "TP-TPR-002",
+    "path": "V3_Testing_Playbook/PLAYBOOK_TPR_002.md",
+    "sha256": "52b785735a82fbb24f0b40640c5079067a7cd873a838e0401132a4c4198846df",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_TPR_002.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-TPR-003",
+   "domain": "TPR",
+   "domain_name": "Third Party",
+   "subdomain": "F.1 Due Diligence, Contracts & Licensing",
+   "question": "Where vendors embed AI inside procured software (CRM, surveillance, HR tools), are those capabilities identified, risk-assessed and brought under the same governance?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P2 (§6A.4)",
+   "claims": [
+    "CLM-26",
+    "CLM-22"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_TPR_003.md",
+    "sha256": "2f3862b9917f770d17078ca512d9fbdebbd0122e9f931d5094d18a4752cc59e9",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_TPR_003.md"
+   },
+   "procedure": {
+    "id": "TP-TPR-003",
+    "path": "V3_Testing_Playbook/PLAYBOOK_TPR_003.md",
+    "sha256": "ceed440e7d2d4ed91ea139409078b8082c99d344cb4c9846ab9e7bd39a7b202a",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_TPR_003.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-TPR-009",
+   "domain": "TPR",
+   "domain_name": "Third Party",
+   "subdomain": "F.1 Due Diligence, Contracts & Licensing",
+   "question": "Does due diligence on AI vendors assess financial standing, funding runway and management integrity proportionate to materiality, in addition to the safety, security and model-weakness diligence already required — and can the firm retrieve its data, models, prompts and configurations and continue the service, in-house or via a substitute provider, if the vendor fails or exits mid-contract?",
+   "testing_confidence": "★1 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-22",
+    "CLM-20"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_TPR_009.md",
+    "sha256": "97799ee7fe96076ef5c905b210677a4f2b75221cb581f857b9d805f4e5bec717",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_TPR_009.md"
+   },
+   "procedure": {
+    "id": "TP-TPR-009",
+    "path": "V3_Testing_Playbook/PLAYBOOK_TPR_009.md",
+    "sha256": "195fc11af9cacdeab338478bc7fe96643693af2b845a5ff67ef3ca0ed44c4d37",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_TPR_009.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-TPR-004",
+   "domain": "TPR",
+   "domain_name": "Third Party",
+   "subdomain": "F.2 Model Change Management",
+   "question": "Would a silent provider-side change to model weights, safety filters or defaults be detected by the firm before it affects customers or controls, with rollback and re-approval paths available?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-21"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_TPR_004.md",
+    "sha256": "f5ef8c6aeded99d8406f65f48bc18e4a777b4bcd3bf5795c2873bde9690ca1e8",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_TPR_004.md"
+   },
+   "procedure": {
+    "id": "TP-TPR-004",
+    "path": "V3_Testing_Playbook/PLAYBOOK_TPR_004.md",
+    "sha256": "09300cae70b586a93cd8d2101970f131b7167542f56c6c71c2272d4d42a51240",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_TPR_004.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-TPR-005",
+   "domain": "TPR",
+   "domain_name": "Third Party",
+   "subdomain": "F.3 Dependencies, Concentration & Data Handling",
+   "question": "For open-source models, is provenance verified — publisher authenticity, weight integrity, licence terms, and screening for known backdoors or unsafe fine-tunes?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-11",
+    "CLM-22"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_TPR_005.md",
+    "sha256": "b5a246c87cdc8045406a06c42512147f04fa1f50711ea9e2d6a6abb1bedc604d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_TPR_005.md"
+   },
+   "procedure": {
+    "id": "TP-TPR-005",
+    "path": "V3_Testing_Playbook/PLAYBOOK_TPR_005.md",
+    "sha256": "2dd0d36f690cc1957d510fa70379e37be734e84c82357664ddcf38f546977934",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_TPR_005.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-TPR-006",
+   "domain": "TPR",
+   "domain_name": "Third Party",
+   "subdomain": "F.3 Dependencies, Concentration & Data Handling",
+   "question": "Do embedding models and vector databases create hidden dependencies — index invalidation on embedding-model change, or lock-in without export paths?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-22",
+    "CLM-19"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_TPR_006.md",
+    "sha256": "bbed97b5ead6d13ec627efe9a0625fc1abd8cbada464daf4dba51cd798defbc5",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_TPR_006.md"
+   },
+   "procedure": {
+    "id": "TP-TPR-006",
+    "path": "V3_Testing_Playbook/PLAYBOOK_TPR_006.md",
+    "sha256": "66f3d38da319c770a9c54c4ea034da1ac05d1269c81fd5af4a46951579d441a5",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_TPR_006.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-TPR-007",
+   "domain": "TPR",
+   "domain_name": "Third Party",
+   "subdomain": "F.3 Dependencies, Concentration & Data Handling",
+   "question": "Is it contractually and technically established whether the provider retains, logs or trains on the firm's prompts, files and outputs, including via sub-processors?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-10",
+    "CLM-22"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_TPR_007.md",
+    "sha256": "626ba8fc8c25f4edcf6446573d893d585711df044751c616e35589d1fe2fac2a",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_TPR_007.md"
+   },
+   "procedure": {
+    "id": "TP-TPR-007",
+    "path": "V3_Testing_Playbook/PLAYBOOK_TPR_007.md",
+    "sha256": "e9e2e67e95c3bd3dd345253478f9022f2c645a1036c7168c0a79f5557d52840d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_TPR_007.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-TPR-008",
+   "domain": "TPR",
+   "domain_name": "Third Party",
+   "subdomain": "F.3 Dependencies, Concentration & Data Handling",
+   "question": "Does dependence on a small number of model, cloud or GPU providers create concentration risk exceeding the firm's stated appetite, with credible substitution options?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P2 (§6A.4)",
+   "claims": [
+    "CLM-22",
+    "CLM-20"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_TPR_008.md",
+    "sha256": "9a31c7b811d9203b1132aa67e71500073653b6c042c3044e7a4d70bbe57b8516",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_TPR_008.md"
+   },
+   "procedure": {
+    "id": "TP-TPR-008",
+    "path": "V3_Testing_Playbook/PLAYBOOK_TPR_008.md",
+    "sha256": "e527e2d861612d2d7431d7c4e376c4ef6116f25d9023ee24a9278852b64ebc50",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_TPR_008.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-RES-001",
+   "domain": "RES",
+   "domain_name": "Operational Resilience",
+   "subdomain": "G.1 Fallback & Degradation",
+   "question": "Is there a defined, tested fallback mode delivering the important business service within impact tolerance when the AI component is unavailable or untrusted?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-20"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_RES_001.md",
+    "sha256": "8ed5d2bac0c925c8539f4c2f74f17cc9b73a9599445acb26145dc25eaf645251",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_RES_001.md"
+   },
+   "procedure": {
+    "id": "TP-RES-001",
+    "path": "V3_Testing_Playbook/PLAYBOOK_RES_001.md",
+    "sha256": "9e3332b726021b9f78210ad58babd2687806351c0e1376a65d553664cea85e05",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_RES_001.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-RES-002",
+   "domain": "RES",
+   "domain_name": "Operational Resilience",
+   "subdomain": "G.1 Fallback & Degradation",
+   "question": "Does the system degrade safely under partial failure and stress — retrieval down, tool timeouts, load spikes, rate limiting — rather than producing plausible but unsupported responses or duplicated stale actions?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-18"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_RES_002.md",
+    "sha256": "df5a4df91e38eeb1d9e43feb5b5588ee44ce9ca8815b7a686a256b612d603de5",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_RES_002.md"
+   },
+   "procedure": {
+    "id": "TP-RES-002",
+    "path": "V3_Testing_Playbook/PLAYBOOK_RES_002.md",
+    "sha256": "dad6ea0015ffa02502b5f11184000fa7c949dbaf92c038cce07a24927dd7197e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_RES_002.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-RES-003",
+   "domain": "RES",
+   "domain_name": "Operational Resilience",
+   "subdomain": "G.2 Containment & Recovery",
+   "question": "Can the system be halted or constrained within a defined time bound, including mid-plan agent termination without orphaned or half-completed actions, and is this tested?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-18",
+    "CLM-19"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_RES_003.md",
+    "sha256": "abe9abd783c35472eb0819c709c1f902f6c2ae4e70cefdd973e3c8b0366cef85",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_RES_003.md"
+   },
+   "procedure": {
+    "id": "TP-RES-003",
+    "path": "V3_Testing_Playbook/PLAYBOOK_RES_003.md",
+    "sha256": "9ccb402db32172198d00cc460f980b10bc61e5ab77c4763f28e72b08a254ef6d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_RES_003.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-RES-004",
+   "domain": "RES",
+   "domain_name": "Operational Resilience",
+   "subdomain": "G.2 Containment & Recovery",
+   "question": "Can the firm roll back to a known-good state — model version, prompts, index, agent memory — within recovery objectives, and has restoration been rehearsed?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.2.0 (12 September 2026)",
+   "claims": [
+    "CLM-19"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_RES_004.md",
+    "sha256": "966964a2dde75bffdf2c6eeb59aa1ad9b5eb7a668907ccd1479086507a6cec10",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_RES_004.md"
+   },
+   "procedure": {
+    "id": "TP-RES-004",
+    "path": "V3_Testing_Playbook/PLAYBOOK_RES_004.md",
+    "sha256": "772f44dca66ec3802f6421bb49b98cd2231aa2e0e7c094930b68fc083cebd1c7",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_RES_004.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-RES-005",
+   "domain": "RES",
+   "domain_name": "Operational Resilience",
+   "subdomain": "G.3 Monitoring & Alerting",
+   "question": "Are quality, drift, and behavioural anomaly metrics monitored continuously with thresholds that trigger defined responses, not just dashboards?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-19"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_RES_005.md",
+    "sha256": "ce0c15d34e8fad0946e98077a26b23391f861a54ad92ab353756a6d26626b9f9",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_RES_005.md"
+   },
+   "procedure": {
+    "id": "TP-RES-005",
+    "path": "V3_Testing_Playbook/PLAYBOOK_RES_005.md",
+    "sha256": "0791f9f818b18cad19aa0c272243cb6258a401bb6ad351f5088b746379abb487",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_RES_005.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-RES-006",
+   "domain": "RES",
+   "domain_name": "Operational Resilience",
+   "subdomain": "G.3 Monitoring & Alerting",
+   "question": "Would the alerting design surface a slow degradation (gradual quality decay, rising hallucination rate) as opposed to only hard failures?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.2.0 (12 September 2026)",
+   "claims": [
+    "CLM-19"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_RES_006.md",
+    "sha256": "eb96907f89987b4e2b48c9b4922773a97adaf482d92d46c285243499ce8ed351",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_RES_006.md"
+   },
+   "procedure": {
+    "id": "TP-RES-006",
+    "path": "V3_Testing_Playbook/PLAYBOOK_RES_006.md",
+    "sha256": "e3541c736f75eef84a62e86ec6bef0e6bb48844bb3abadfd26583920b81ed2da",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_RES_006.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-RES-007",
+   "domain": "RES",
+   "domain_name": "Operational Resilience",
+   "subdomain": "G.4 Resilience Mapping",
+   "question": "Are AI dependencies mapped into the firm's important business services and scenario testing, including severe-but-plausible AI-specific scenarios?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-20"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_RES_007.md",
+    "sha256": "b77289ce5dffab0e5a23c5fbb2c4e3bceab5dbc3dcb9158f0a2c4acadfd3c653",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_RES_007.md"
+   },
+   "procedure": {
+    "id": "TP-RES-007",
+    "path": "V3_Testing_Playbook/PLAYBOOK_RES_007.md",
+    "sha256": "f5f6970fc7298696eee9c8874361a4a0a8f9755367d063244c4a1e92762ae75d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_RES_007.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-CON-001",
+   "domain": "CON",
+   "domain_name": "Conduct & Fairness",
+   "subdomain": "H.1 Discrimination & Proxy Bias",
+   "question": "Do outcome distributions differ materially across protected and vulnerable groups, tested at subgroup and intersectional level with fairness metrics and thresholds that were fixed and recorded before results were seen — and is any post-hoc selection or substitution of a fairness metric itself documented and treated as a finding?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-23"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_CON_001.md",
+    "sha256": "de35a1b4a685175a9e6c8f84bb8ccaf85ef951798a2e46a8d790831a3c2eb093",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_CON_001.md"
+   },
+   "procedure": {
+    "id": "TP-CON-001",
+    "path": "V3_Testing_Playbook/PLAYBOOK_CON_001.md",
+    "sha256": "aebe5d2f84e10c9869f94c83142ddedd18ffe968db73f8322a5efe32260e64c8",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_CON_001.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-CON-002",
+   "domain": "CON",
+   "domain_name": "Conduct & Fairness",
+   "subdomain": "H.1 Discrimination & Proxy Bias",
+   "question": "Could facially neutral features act as proxies for protected characteristics (postcode, device, shopping patterns), and has proxy analysis been performed?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-23"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_CON_002.md",
+    "sha256": "3b6510b802a7f603043afb98e2ab5b72f4272047f5154b6c817970097d8bfb9d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_CON_002.md"
+   },
+   "procedure": {
+    "id": "TP-CON-002",
+    "path": "V3_Testing_Playbook/PLAYBOOK_CON_002.md",
+    "sha256": "99d097b7fd6286ec07ec0ce8a8b8706d7c2b406a995c3fb9f8a5e643efdd638e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_CON_002.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-CON-003",
+   "domain": "CON",
+   "domain_name": "Conduct & Fairness",
+   "subdomain": "H.2 Customer Outcomes, Vulnerability & Access",
+   "question": "Does the system identify and adapt to indicators of customer vulnerability, or could it exploit or disadvantage customers with characteristics of vulnerability?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-24"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_CON_003.md",
+    "sha256": "a8909b31bfe1260887ba034256001c61913e17de60f2fba0f3d170f3fdebdc12",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_CON_003.md"
+   },
+   "procedure": {
+    "id": "TP-CON-003",
+    "path": "V3_Testing_Playbook/PLAYBOOK_CON_003.md",
+    "sha256": "cc1eb78c6023e8ea9b6e9fa5b9afa96cfe6b3058399746882e16f5e1b2cac7e3",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_CON_003.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-CON-004",
+   "domain": "CON",
+   "domain_name": "Conduct & Fairness",
+   "subdomain": "H.2 Customer Outcomes, Vulnerability & Access",
+   "question": "Can generative outputs delivered to customers contain mis-statements about products, terms, fees or rights, and is pre-delivery accuracy control evidenced?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-24",
+    "CLM-05"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_CON_004.md",
+    "sha256": "f910cc5ce5ea9a55a0efe57017a4c884c8f18bb4510724e4379cb6ee52c94c0d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_CON_004.md"
+   },
+   "procedure": {
+    "id": "TP-CON-004",
+    "path": "V3_Testing_Playbook/PLAYBOOK_CON_004.md",
+    "sha256": "cff0329f803d4c5bba95faccca41c70bfe44f44e85f70d4e035f653d12b10cac",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_CON_004.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-CON-005",
+   "domain": "CON",
+   "domain_name": "Conduct & Fairness",
+   "subdomain": "H.2 Customer Outcomes, Vulnerability & Access",
+   "question": "Could AI-driven eligibility, pricing or servicing decisions systematically exclude customer segments from fair access to products (financial exclusion)?",
+   "testing_confidence": "★1 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-23",
+    "CLM-24"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_CON_005.md",
+    "sha256": "d197f8d28c1ccb92257f39bee34f537932885d9cba55f167f08d5cd29a669d7e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_CON_005.md"
+   },
+   "procedure": {
+    "id": "TP-CON-005",
+    "path": "V3_Testing_Playbook/PLAYBOOK_CON_005.md",
+    "sha256": "2616328f51a6a498bf8f31503deb47fb3ea7a912e20be30fd477396231987685",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_CON_005.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-CON-006",
+   "domain": "CON",
+   "domain_name": "Conduct & Fairness",
+   "subdomain": "H.2 Customer Outcomes, Vulnerability & Access",
+   "question": "Where AI influences pricing or value, can it produce differential pricing untethered from cost or risk (e.g. inertia pricing, willingness-to-pay exploitation)?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-23",
+    "CLM-24"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_CON_006.md",
+    "sha256": "c943ff01a456b8a52dfaddcafd29f8270cbdd8a359cc591496a01aa491f8737d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_CON_006.md"
+   },
+   "procedure": {
+    "id": "TP-CON-006",
+    "path": "V3_Testing_Playbook/PLAYBOOK_CON_006.md",
+    "sha256": "e88be284da57d1b13b14ff94151d471bccecfffd1347d199402c789366766d54",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_CON_006.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-CON-009",
+   "domain": "CON",
+   "domain_name": "Conduct & Fairness",
+   "subdomain": "H.2 Customer Outcomes, Vulnerability & Access",
+   "question": "Can the system produce harmful, abusive, degrading or unsafe output toward a customer or colleague in the course of ordinary, non-adversarial use — distinct from output elicited by an adversary (IRQ-SEC-001/002) — and is this tested against a structured harm taxonomy under normal-use conditions?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.3.6 (22 November 2026)",
+   "claims": [
+    "CLM-24",
+    "CLM-23"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_CON_009.md",
+    "sha256": "06dfa97ea80ef9e5e9ae97ed3eb029264e5b8d8e723c03a621f9e001e56efe5e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_CON_009.md"
+   },
+   "procedure": {
+    "id": "TP-CON-009",
+    "path": "V3_Testing_Playbook/PLAYBOOK_CON_009.md",
+    "sha256": "f088d9607d39ce7b9a9affa81bd652ff83df773bd8e10b37e46cd1e5060bc703",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_CON_009.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-CON-010",
+   "domain": "CON",
+   "domain_name": "Conduct & Fairness",
+   "subdomain": "H.2 Customer Outcomes, Vulnerability & Access",
+   "question": "Where an AI system mediates a customer journey, does its own interaction design — dynamically generated retention dialogue, pre-selected defaults, or the number and complexity of steps — make exiting, switching, cancelling, claiming or complaining materially more effortful than buying or upgrading, and is that asymmetry measured against the acquisition path and across near-identical customers?",
+   "testing_confidence": "★1 Confidence — as at FAIAS v1.2.0 (12 September 2026)",
+   "claims": [
+    "CLM-24",
+    "CLM-17",
+    "CLM-23"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_CON_010.md",
+    "sha256": "9e4f6fbf992affeca016cd24e02d3dfb9010805e073d8b9ca455c9659a0ad2fd",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_CON_010.md"
+   },
+   "procedure": {
+    "id": "TP-CON-010",
+    "path": "V3_Testing_Playbook/PLAYBOOK_CON_010.md",
+    "sha256": "42752e79f1874885abedd096b78219636cc145f9aea2c45aa09f8272e38bae27",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_CON_010.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-CON-007",
+   "domain": "CON",
+   "domain_name": "Conduct & Fairness",
+   "subdomain": "H.3 Feedback Loops & Transparency",
+   "question": "Can the system's own decisions reshape the data it later learns from — feedback loops or performative effects that entrench or amplify unfair patterns?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-23"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_CON_007.md",
+    "sha256": "4749510b2c7adc5ddc12d72d94dee1976750c5bb463114bf430c2f3a18bab6a0",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_CON_007.md"
+   },
+   "procedure": {
+    "id": "TP-CON-007",
+    "path": "V3_Testing_Playbook/PLAYBOOK_CON_007.md",
+    "sha256": "047762ed90fec35a7e19e14d90e95a16219cb94d79fb4a5220000ba68f9ab685",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_CON_007.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-CON-008",
+   "domain": "CON",
+   "domain_name": "Conduct & Fairness",
+   "subdomain": "H.3 Feedback Loops & Transparency",
+   "question": "Are customers told, in a comprehensible way, when AI materially influences decisions or interactions affecting them, consistent with regulatory expectations?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-24",
+    "CLM-17"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_CON_008.md",
+    "sha256": "379513f818351436a7102c7a515b280e5e38b574ed335e6c3ad896ed7ae1cfdf",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_CON_008.md"
+   },
+   "procedure": {
+    "id": "TP-CON-008",
+    "path": "V3_Testing_Playbook/PLAYBOOK_CON_008.md",
+    "sha256": "ab156c0a78c6b3911584dde1b86dfdb5d1673e2c54b6f0aa0d67ba126c08adca",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_CON_008.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-001",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.1 Inventory & Ownership",
+   "question": "Is there a named accountable owner, with appropriate seniority and SMCR mapping, for each AI system across its full lifecycle including third-party components?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-26"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_001.md",
+    "sha256": "770932e89f030a737dd6f3ccf9c3084eb800580054b661587ab9a6d4a1fd69b9",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_001.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-001",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_001.md",
+    "sha256": "25da34b256872ae242cd219e55c49c5edfab6d2d3d9cc70ee5bca0f3acb9401f",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_001.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-002",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.1 Inventory & Ownership",
+   "question": "Is the AI inventory demonstrably complete — capturing shadow AI, embedded vendor AI, spreadsheets-plus-API usage and agentic workflows — with a mechanism that finds unrecorded use?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P2 (§6A.4)",
+   "claims": [
+    "CLM-26"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_002.md",
+    "sha256": "56dd76c4c6d60da390612c221f5cbd7f6d63488e0822b66cc5268f8910df5813",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_002.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-002",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_002.md",
+    "sha256": "7ed6fd05feba629c65a6e85db0fd802aabdf8d6e49bac71f46765c9cba902148",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_002.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-003",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.2 Approval, Tiering & Policy",
+   "question": "Are approval conditions and usage restrictions (approved tasks, user groups, guardrails) technically enforced and monitored, or only stated in the approval paper?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-27",
+    "CLM-26"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_003.md",
+    "sha256": "2bcf6af307db0fd2e8d7cfde6e87628845df0fa5d9ebb926696ee374b6f9c10f",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_003.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-003",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_003.md",
+    "sha256": "3b6831c08a7939cc3ffc055cf33d5c84ba9871d6865b774a8c0b822d19224fae",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_003.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-004",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.2 Approval, Tiering & Policy",
+   "question": "Does the risk-based tiering methodology correctly capture generative and agentic characteristics (autonomy, tool access, customer proximity), driving proportionate control depth?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-26"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_004.md",
+    "sha256": "1bb9e4d4f79b9dc8a3a33c3a3b361e8b07b5ce683d910d8fc049121a0423071e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_004.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-004",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_004.md",
+    "sha256": "b1f5f62248e2290bc7cdfb23109ca574de3fa36d065258a81d3cfa1a0fa3ada4",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_004.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-005",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.2 Approval, Tiering & Policy",
+   "question": "Do firm policies address GenAI/agentic specifics — acceptable use, data entry restrictions, output reliance, agent permissions — or only legacy model risk?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-26"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_005.md",
+    "sha256": "e59bfaab531c8974f4b47392618be7708d341b3cb7274864278432f0adb6ee78",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_005.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-005",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_005.md",
+    "sha256": "ef71940c3df70e0fb03f0690dee1723e17f9a76657266ac25ea1f5df1c49d70f",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_005.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-006",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.2 Approval, Tiering & Policy",
+   "question": "Has the firm articulated a board-approved risk appetite for AI, with measurable indicators, against which individual deployments are demonstrably assessed?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P2 (§6A.4)",
+   "claims": [
+    "CLM-26"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_006.md",
+    "sha256": "448fa4d2a44e739c1fecf92dab2d3cfe0e7b73b1c10807f5926cb6505040b8a1",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_006.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-006",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_006.md",
+    "sha256": "2af9ec2a25d3dbb3ef7ca24c2e6ebe3a1548e0ad5fe90d4d61df3111e8383036",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_006.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-012",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.2 Approval, Tiering & Policy",
+   "question": "Has the system's effective operating envelope drifted from its approved envelope — through changes in intended use, user behaviour, prompts, tools, integrations, or the surrounding business process — while the model itself remained unchanged?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P1 (§6A.4)",
+   "claims": [
+    "CLM-04",
+    "CLM-27"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_012.md",
+    "sha256": "6e4300b6126cd057d738b3dd621d2a4dc124ab03a91d9c7c4e04863aba388510",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_012.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-012",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_012.md",
+    "sha256": "df12279c2435e7d2d178b8e3adc92857475d59223b3bd2c84997d2a0a1bb7dc1",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_012.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-007",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.3 Validation & Oversight",
+   "question": "Was validation performed by a party independent of development, with authority to reject, using firm-relevant evaluations rather than vendor or public benchmark claims?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-08",
+    "CLM-26"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_007.md",
+    "sha256": "bf4abfcd2f4f6ad15ad4a5515e192480b6ffeaa98ebead7bb4c1b9841e3257e8",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_007.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-007",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_007.md",
+    "sha256": "ab7b09d6604874951bc694e4f199c2aea21c2175a65af69788e5701251a1c50e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_007.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-008",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.3 Validation & Oversight",
+   "question": "Do monitoring results, incidents and drift signals flow to accountable governance bodies with defined triggers for revalidation, restriction or withdrawal?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-19",
+    "CLM-26"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_008.md",
+    "sha256": "a54eddbea09a85ca41cc0e4ebe4905a5345a079a0b8db841d1826d0ed2610d4e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_008.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-008",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_008.md",
+    "sha256": "0e94b959290dc9cc61644869e467285458e2024c436ff746d7b52d1af7adcabd",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_008.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-009",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.4 Documentation, Records & Regulatory",
+   "question": "Does documentation (system/model cards, data statements, intended-use and limitation statements) exist at a standard enabling effective independent review and regulatory response?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P2 (§6A.4)",
+   "claims": [
+    "CLM-25",
+    "CLM-26"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_009.md",
+    "sha256": "b3205fde8df62b3e44afb35ed66158eff3413d0bf7ccf6a1c8b4ad8c427b52d5",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_009.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-009",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_009.md",
+    "sha256": "5092d28568d4d2260bd8115acc98b559b550a6d3a685b2901b949daa1afc3622",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_009.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-010",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.4 Documentation, Records & Regulatory",
+   "question": "Would retained records — inputs, outputs, versions, agent traces, human decisions — allow full reconstruction of any consequential decision for audit, complaint or regulatory purposes?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-25"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_010.md",
+    "sha256": "ae478ca22c5b96d897cf7bddcc9aa0aa1c528e863989674b51955357e89d98f7",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_010.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-010",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_010.md",
+    "sha256": "3b44b051597c895b4bdc6e2701357c358336c1a032a5c19b3372d159e2cdde7c",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_010.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-011",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.4 Documentation, Records & Regulatory",
+   "question": "Are applicable regulatory obligations (EU AI Act classification, outsourcing/CTP registers, Consumer Duty MI, model risk expectations) mapped to each system with evidenced compliance owners — and does that mapping carry dated forward obligations that are enacted but not yet applicable, so the firm is not discovering them reactively?",
+   "testing_confidence": "★3 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P3 (§6A.4)",
+   "claims": [
+    "CLM-26"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_011.md",
+    "sha256": "5b6a817f17179f05c639174f7a6d6f7f61e475c29e9e58fc79b780adae1f2212",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_011.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-011",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_011.md",
+    "sha256": "6cb38aa8b120aea112738667da0a41174e5037e83a2e7876a783448bac175da7",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_011.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-013",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.4 Documentation, Records & Regulatory",
+   "question": "Given a defined failure signature (model/configuration version, prompt or logic defect, affected date range), can the institution identify the *full* affected cohort of decisions — not only reconstruct the individual decision under complaint — and does a proactive remediation process exist to reach that cohort without waiting for a complaint to arrive?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026)",
+   "claims": [
+    "CLM-25",
+    "CLM-17"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_013.md",
+    "sha256": "be06b24828cfae680ce7a2f40dd3b4904b853433a38b376126c3ccb08c57629d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_013.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-013",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_013.md",
+    "sha256": "a198ded9e9d1edeed0826400da7cc0c5b64999c08ca708cd59a4ac553daf3ac6",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_013.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-014",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.4 Documentation, Records & Regulatory",
+   "question": "Does the firm's incident classification scheme recognise AI-specific failure classes — mass confabulation, prompt-injection compromise, agentic misaction, silent bias event — with defined severity mapping and regulator-notification paths, such that the notification clock can start on an AI failure at all?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P2 (§6A.4)",
+   "claims": [
+    "CLM-26",
+    "CLM-19 (cross-reference: a silent bias event under IRQ-GOV-014 also bears on CLM-23 at assessment)"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_014.md",
+    "sha256": "f2dc0566b9ab257858e0ffae87e36753e6aa7dba89dbd65a9e7d3f6836476cf2",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_014.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-014",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_014.md",
+    "sha256": "df2620c454c30774a594f7f7bae5712e0e4716f31a2374a2a3340f9fe8bdc73e",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_014.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-015",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.4 Documentation, Records & Regulatory",
+   "question": "Are the firm's external representations about AI capability — marketing, product disclosures, RFP and due-diligence responses, investor communications — substantiated by, and periodically reconciled against, the system's validated capability envelope and documented limitation statements?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P2 (§6A.4)",
+   "claims": [
+    "CLM-26",
+    "CLM-08"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_015.md",
+    "sha256": "fda3af756d2ccc0489848151d4245be3f8cc086c9dcf75cebb4612f19a8e4a1d",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_015.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-015",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_015.md",
+    "sha256": "431f73f27b75251410cb7b079baf1b690596d773beae3c72fa00146301eeaa64",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_015.md"
+   }
+  },
+  {
+   "irq_id": "IRQ-GOV-016",
+   "domain": "GOV",
+   "domain_name": "Governance",
+   "subdomain": "I.4 Documentation, Records & Regulatory",
+   "question": "Where AI-generated or AI-assisted output feeds the firm's risk-data aggregation estate, capital or provisioning calculations, or supervisory/regulatory returns, is that output subject to the same accuracy, completeness, timeliness, adaptability and traceability discipline the firm applies to its risk data under BCBS 239 — and is the AI origin of any contributing output flagged and reconstructable within the aggregation record?",
+   "testing_confidence": "★2 Confidence — as at FAIAS v1.1.0 (25 August 2026) · P2 (§6A.4)",
+   "claims": [
+    "CLM-28",
+    "CLM-25"
+   ],
+   "canvas": {
+    "path": "V2_IRQ_Battery/canvases/CANVASES_GOV_016.md",
+    "sha256": "66b49a962270963913e0bba297013cdf2fccd33a24ec48e0a96fff23f3e2e532",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V2_IRQ_Battery/canvases/CANVASES_GOV_016.md"
+   },
+   "procedure": {
+    "id": "TP-GOV-016",
+    "path": "V3_Testing_Playbook/PLAYBOOK_GOV_016.md",
+    "sha256": "d51768fdab6a33af6d2e8df07c9ec2d43dedc2f5b28219720c2a2328f3e1e1b5",
+    "url": "https://raw.githubusercontent.com/attahwonder/faias-standard/v1.3.6/V3_Testing_Playbook/PLAYBOOK_GOV_016.md"
+   }
+  }
+ ]
+}
